@@ -1,0 +1,959 @@
+/* font name: open sans */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+body{
+
+    background-color:var(--body-col);
+    color:var(--font-col);
+
+}
+
+/* utility classes css */
+
+.flex{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+:root{
+
+    --font-col : #00ffff;
+    --body-col : #000;
+
+}
+
+hr{
+    background-color: var(--font-col);
+    color: var(--font-col);
+}
+
+/* navgation bar css */
+
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+    height: 80px;
+    background-color: var(--body-col);
+    position: fixed;
+
+}
+
+.logo-img{
+
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.logo-img:hover{
+    box-shadow: 0px 0px 25px var(--font-col),0px 0px 25px var(--font-col),0px 0px 25px var(--font-col);
+}
+
+.nav-h2{
+
+    color: var(--font-col);
+    text-transform: capitalize;
+    font-size: 30px;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.nav-h2:hover{
+
+    text-shadow: 0px 0px 25px var(--font-col),0px 0px 25px var(--font-col),0px 0px 25px var(--font-col);
+
+}
+
+.a{
+    background-color: var(--font-col);
+    height: 60px;
+    padding: 10px 15px;
+    text-align: center;
+    border: 2px solid var(--font-col);
+    box-shadow: 0 0 20px var(--font-col);
+    border-radius: 30px;
+    font-size: 20px;
+    font-style: 500;
+    transition: all 0.5s ease-in-out;
+}
+
+.a:hover{
+    background-color: var(--body-col);
+    color: var(--font-col);
+}
+
+a{
+    text-decoration: none;
+}
+.nav-contents{
+    color: var(--font-col);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 25px;
+    transition: all 0.5s ease-in-out;
+    margin-left: 150px;
+}
+
+.nav-contents:hover{
+    text-shadow: 0px 0px 25px var(--font-col),0px 0px 25px var(--font-col),0px 0px 25px var(--font-col);
+
+}
+
+li .a:is(:link,:active){
+    color: black;
+
+}
+.nav-contents:is(:active){
+    background-color: var(--font-col);
+    color: var(--body-col);
+    padding: 8px;
+    border-radius: 20px;
+}
+
+/* css of main interface */
+
+.main-interface{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-content{
+    margin-top: 80px;
+}
+
+.main-h2{
+    text-transform:capitalize;
+    font-size: 60px;
+}
+h1{
+    font-size: 110px;
+    text-transform: capitalize;
+}
+
+.my-img{
+    margin: 70px 10px;
+    object-fit: cover;
+    height: 600px;
+    width: 600px;
+}
+
+/* about section css */
+
+.heading{
+    text-transform: capitalize;
+    color: var(--font-col);
+    font-size: 100px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    margin: 20px;
+}
+
+.heading:hover{
+    background-color: var(--font-col);
+    color: var(--body-col);
+    border-radius: 50px;
+}
+
+.my-img-2{
+    height: 450px;
+    width: 450px;
+    border: 5px solid var(--font-col);
+    border-radius: 25px;
+    margin: 30px 40px;
+    box-shadow: 0 0 20px var(--font-col);
+}
+
+.about-p{
+    margin: 20px;
+    font-size: 25px;
+}
+
+/* skills section css */
+
+.skills-flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.fa-brands{
+    font-size: 150px;
+    margin: 20px;
+}
+
+.icons{
+    border: 2px solid var(--font-col);
+    color: var(--font-col);
+    background-color: var(--body-col);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    margin: 50px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px var(--font-col);
+    height: 300px;
+    transition: all 0.5s ease-in-out;
+}
+
+.icons:hover{
+    background-color: var(--font-col);
+    color: var(--body-col);
+    box-shadow: inset 0 0 20px var(--body-col);
+}
+
+.fa-solid{
+    font-size: 150px;
+    margin: 20px;
+}
+
+.fa-bootstrap{
+    font-size: 130px;
+}
+
+/* project section css */
+
+.project-dis{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+
+.project{
+    border: 2px solid var(--font-col);
+    border-radius: 20px;
+    height: 280px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 20px var(--font-col);
+    padding: 30px;
+    width: 500px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.project:hover{
+    background-color: var(--font-col);
+    color: var(--body-col);
+    border: 2px solid var(--body-col);
+    box-shadow: inset 0 0 20px var(--body-col);
+}
+
+.project:hover .project-btn{
+    background-color: var(--body-col);
+    color: var(--font-col);
+    box-shadow: inset 0 0 20px var(--font-col) ;
+}
+
+.project:hover .project-img{
+    border: 2px solid var(--body-col);
+    box-shadow: 0 0 20px var(--body-col);
+}
+
+.project-btn{
+    background-color: var(--font-col);
+    color: var(--body-col);
+    padding: 11px 15px;
+    font-size: 18px;
+    border: 2px solid var(--font-col);
+    border-radius: 25px;
+    font-weight: 700;
+    margin: 20px;
+    box-shadow: 0 0 20px var(--font-col);
+}
+
+
+.project-p{
+    font-size: 18px;
+}
+
+.project-img{
+    height:200px;
+    width: 200px;
+    border: 2px solid var(--font-col);
+    border-radius: 12px;
+    box-shadow: 0 0 20px var(--font-col);
+    margin-right: 20px;
+}
+
+h3{
+    margin: 8px;
+}
+
+/* contact section css */
+
+.contact-dis{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin: 40px;
+}
+
+.contact-img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border: 5px solid var(--font-col);
+    border-radius: 20px;
+    box-shadow: 0 0 30px var(--font-col);
+}
+
+.contact-h3{
+    font-size: 20px;
+}
+
+label{
+    font-size: 28px;
+    margin: 15px;
+    text-transform: capitalize;
+}
+
+::placeholder{
+    color: var(--font-col);
+    font-size: 24px;
+    padding: 5px;
+    background-color: transparent;
+    text-transform: capitalize;
+}
+
+input{
+    background-color: transparent;
+    border-bottom-color: var(--font-col);
+    border-right: none;
+    border-left:none;
+    border-top: none;
+    width: 500px;
+    color: var(--font-col);
+    outline: none;
+    font-size: 24px;
+}
+
+textarea{
+    background-color: transparent;
+    border: 2px solid var(--font-col);
+    height: 250px;
+    width: 500px;
+    font-size: 24px;
+    color: var(--font-col);
+    border-radius:20px;
+    margin: 15px;
+    outline: none;
+    padding: 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+.contact-btn{
+    background-color: var(--font-col);
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px solid var(--body-col);
+    border-radius: 30px;
+    box-shadow: inset 0 0 20px var(--body-col),0 0 20px var(--font-col);
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-btn:hover{
+    background-color: var(--body-col);
+    color: var(--font-col);
+    box-shadow: inset 0 0 20px var(--font-col),0 0 20px var(--font-col);
+}
+
+footer{
+    background-color: var(--font-col);
+    backdrop-filter: blur(12px);
+    color: var(--body-col);
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fa-facebook{
+    background-color:#1974EC;
+    color:#fff;
+    font-size: 40px;
+    padding: 10px 18px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--font-col);
+    margin-left: 5px;
+}
+
+.fa-instagram{
+    background:linear-gradient(45deg,#ffcc00,#fe7903,#ff1c31,#fb02c5,#7A0CFE);
+    color:#fff;
+    font-size: 40px;
+    padding: 10px 12px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--font-col); 
+    margin-left: 5px;  
+}
+
+.fa-linkedin{
+    background-color:#0270AD;
+    color:#fff;
+    font-size: 40px;
+    padding: 10px 12px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--font-col); 
+    margin-left: 5px;  
+}
+
+.fa-youtube{
+    background-color: #F60002;
+    color:#fff;
+    font-size: 35px;
+    padding:12px 10px ;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--font-col); 
+    margin-left: 5px;  
+}
+
+.fa-github{
+    background-color:#191E24;
+    color:#fff;
+    font-size: 40px;
+    padding: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--font-col); 
+    margin-left: 5px;  
+}
+
+.fa-twitter{
+    background-color:#1C96E8;
+    color:#fff;
+    font-size: 40px;
+    padding: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--font-col); 
+    margin-left: 5px;  
+}
+
+.fa-discord{
+    background-color:#5562EA;
+    color: #fff;
+    font-size: 35px;
+    padding: 12px 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--font-col); 
+    margin-left: 5px;  
+}
+
+.fa-whatsapp{
+    background-color:#24CC63;
+    color:#fff;
+    font-size: 40px;
+    padding: 10px 12px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--font-col); 
+    margin-left: 5px;  
+}
+
+.fa-m{
+    background:linear-gradient(45deg,#4081EC,#E34133,#F3B604,#32A350);
+    color:#fff;
+    font-size: 40px;
+    padding: 10px 12px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--font-col); 
+    margin-left: 5px;  
+}
+
+.main{
+    background-color: var(--font-col);
+    color: var(--body-col);
+    font-size: 30px;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 45px;
+    border:2px solid var(--body-col);
+    font-weight: 700;
+    box-shadow: inset 0 0 30px var(--body-col),0 0 30px var(--font-col);
+    transition: all 0.5s ease-in-out;
+}
+
+.main:hover{
+    background-color:var(--body-col);
+    color: var(--font-col);
+}
+
+.main:hover .fa-download{
+    background-color: var(--font-col);
+    color: var(--body-col);
+}
+
+.fa-download{
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: var(--body-col);
+    padding: 8px;
+    color: var(--font-col);
+}
+
+.fa-facebook-f{
+    background-color:#1974EC;
+    color:#fff;
+    font-size: 40px;
+    padding: 10px 18px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--font-col);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.social-handles{
+    background-color: var(--body-col);
+    border: 2px solid var(--body-col);
+    border-radius: 50px;
+}
+.footer-btn{
+    background-color: var(--body-col);
+    color: var(--font-col);
+    font-size: 18px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 10px;
+}
+.fa-file-arrow-down{
+    background-color: var(--font-col);
+    color: var(--body-col);
+    font-size: 20px;
+    padding: 5px 8px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.footer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.top{
+    text-decoration: none;
+    color: var(--body-col);
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.nav-contents-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.main-div{
+    text-align: center;
+    margin: 40px;
+}
+marquee{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.fa-bars{
+    color: var(--font-col);
+    font-size: 40px;
+    display: none;
+    appearance: none;
+    opacity: 0;
+}
+
+.change-btn-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+}
+
+.change-btn{
+    background-color: var(--body-col);
+    color: var(--font-col);
+    height: 30px;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.col{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 2px solid var(--body-col);
+}
+
+.col-1{
+    background-color:#ff2c2c;
+}
+
+.col-2{
+    background-color: #5bb450;
+}
+
+.col-3{
+    background-color:#e8e337;
+}
+
+.col-4{
+    background-color:#ca5ccd;
+}
+/* menu bar css */
+
+.slide{
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    background-color: var(--body-col);
+    transition: 0.5s ease;
+}
+
+.slide-h2{
+    color: var(--font-col);
+    font-weight: 800;
+    text-align:right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+
+}
+
+ul li {
+    list-style: none; 
+}
+
+ul li .a{
+    color: var(--font-col);
+    font-weight: 500;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+/* media queries for portfolio */
+
+@media screen and (max-width:1450px){
+    .my-social-handles{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .nav-contents{
+        margin-left: 120px;
+    }
+    .main-h2{
+        font-size: 45px;
+        margin-left: 15px;
+    }
+    h1{
+        font-size: 95px;
+        margin-left: 15px;
+    }
+    .fa-discord{
+        font-size: 30px;
+        padding:10px 8px;
+    }
+    .fa-facebook{
+        font-size: 30px;
+        padding: 8px 15px;
+    }
+    .fa-youtube{
+        font-size: 30px;
+        padding: 10px 8px;
+    }
+    .fa-github{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .fa-linkedin{
+        font-size: 30px;
+        padding: 8px 10px;
+    }
+    .fa-twitter{
+        font-size: 30px;
+        padding: 8px;
+    }
+    .fa-whatsapp{
+        font-size: 35px;
+        padding: 8px 10px;
+    }
+    .fa-m{
+        font-size: 30px;
+        padding: 12px 14px;
+    }
+    .fa-instagram{
+        font-size: 30px;
+        padding: 10px 12px;
+    }
+    .project{
+        margin-bottom: 60px;
+    }
+    .fa-facebook-f{
+        font-size: 25px;
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .main-h2{
+        font-size: 35px;
+    }
+    h1{
+        font-size: 80px;
+    }
+    .nav-contents{
+        margin-left: 100px;
+    }
+    .fa-discord{
+        font-size: 25px;
+        padding:10px 8px;
+    }
+    .fa-facebook{
+        font-size: 25px;
+        padding: 12px 16px;
+        margin-left: 10px;
+    }
+    .fa-youtube{
+        font-size: 25px;
+        padding: 10px 8px;
+    }
+    .fa-github{
+        font-size: 25px;
+        padding: 10px;
+    }
+    .fa-linkedin{
+        font-size: 25px;
+        padding: 8px 10px;
+    }
+    .fa-twitter{
+        font-size: 25px;
+        padding: 8px;
+    }
+    .fa-whatsapp{
+        font-size: 30px;
+        padding: 8px 10px;
+    }
+    .fa-m{
+        font-size: 25px;
+        padding: 12px 14px;
+    }
+    .fa-instagram{
+        font-size: 25px;
+        padding: 10px 12px;
+    }
+    .main{
+        font-size:20px;
+    }
+    .fa-download{
+        padding: 6px;
+        font-size: 20px;
+    }
+    label{
+        font-size: 25px;
+        margin: 12px;
+    }
+}
+
+@media  screen and (max-width:1300px) {
+    .nav-contents{
+        margin-left: 80px;
+    }
+    .fa-discord{
+        font-size: 22px;
+        padding:10px 8px;
+        margin-left: 2px;
+    }
+    .fa-facebook{
+        font-size: 22px;
+        padding: 12px 16px;
+        margin-left: 10px;
+    }
+    .fa-youtube{
+        font-size: 22px;
+        padding: 10px 8px;
+        margin-left: 2px;
+    }
+    .fa-github{
+        font-size: 25px;
+        padding: 10px;
+        margin-left: 2px;
+    }
+    .fa-linkedin{
+        font-size: 22px;
+        padding: 8px 10px;
+        margin-left: 2px;
+    }
+    .fa-twitter{
+        font-size: 22px;
+        padding: 8px;
+        margin-left: 2px;
+    }
+    .fa-whatsapp{
+        font-size: 25px;
+        padding: 8px 10px;
+        margin-left: 2px;
+    }
+    .fa-m{
+        font-size: 22px;
+        padding: 12px 14px;
+        margin-left: 2px;
+    }
+    .fa-instagram{
+        font-size: 22px;
+        padding: 10px 12px;
+        margin-left: 2px;
+    }
+    label{
+        margin: 20px;
+        font-size: 22px;
+    }
+    .my-img{
+        height: 530px;
+        width: 530px;
+    }
+}
+@media  screen and (max-width:1200px) {
+    .my-img{
+        height: 500px;
+        width: 500px;
+    }
+    .main-div{
+        margin: 50px;
+    }
+    .nav-contents{
+        margin-left: 60px;
+    }
+    label{
+        margin: 25px;
+        font-size: 20px;
+    }
+    .about-p{
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width:1150px) {
+    .my-img{
+        height: 480px;
+        width: 480px;
+    }
+    .fa-discord{
+        font-size: 20px;
+        padding:10px 8px;
+        margin-left: 2px;
+    }
+    .fa-facebook{
+        font-size: 20px;
+        padding: 10px 14px;
+        margin-left: 10px;
+    }
+    .fa-youtube{
+        font-size: 20px;
+        padding: 10px 8px;
+        margin-left: 2px;
+    }
+    .fa-github{
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 2px;
+    }
+    .fa-linkedin{
+        font-size: 20px;
+        padding: 8px 10px;
+        margin-left: 2px;
+    }
+    .fa-twitter{
+        font-size: 20px;
+        padding: 8px;
+        margin-left: 2px;
+    }
+    .fa-whatsapp{
+        font-size: 20px;
+        padding: 8px 10px;
+        margin-left: 2px;
+    }
+    .fa-m{
+        font-size: 20px;
+        padding: 10px 12px;
+        margin-left: 2px;
+    }
+    .fa-instagram{
+        font-size: 20px;
+        padding: 10px 12px;
+        margin-left: 2px;
+    }
+    .main-div{
+        margin: 80px;
+    }
+    .about-p{
+        margin-bottom: 80px;
+    }
+}
+@media screen and (max-width:1100px) {
+    .my-img{
+        height: 450px;
+        width: 450px;
+        margin-top: 0px;
+    }
+}
